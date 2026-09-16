@@ -18,6 +18,7 @@
   </head>
   <body>
     <header class="site-header">
+      <div class="top-banner">Besplatna dostava za narudžbe iznad 250 KM</div>
       <div class="container nav-bar">
         <div class="brand-wrap">
           <span class="brand-mark">L</span>
@@ -26,11 +27,17 @@
         <nav class="main-nav" aria-label="Glavna navigacija">
           <a href="#home">Početna</a>
           <a href="#shop">Shop</a>
+          <a href="#new">New In</a>
           <a href="#about">O nama</a>
           <a href="#reviews">Recenzije</a>
-          <a href="#contact">Kontakt</a>
         </nav>
-        <button class="nav-button">Naruči sada</button>
+        <div class="nav-actions">
+          <button class="nav-button">Naruči sada</button>
+          <button class="cart-button" type="button" aria-label="Košarica">
+            <span>🛍️</span>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -39,11 +46,11 @@
         <div class="container hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">Nova kolekcija 2026</p>
-            <h1>Osvijetli svoju ljepotu prirodno i glamurozno.</h1>
+            <h1>Luxury beauty za svaki dan i svaku večer.</h1>
             <p class="hero-text">
               Kreirane s pažnjom za svaku nijansu, naše formule daju savršen sjaj,
-              hidrataciju i dugotrajan efekat za svaki trenutak - od svakodnevnog
-              looka do posebne večeri.
+              hidrataciju i dugotrajan efekat za svaki trenutak — od elegantnog,
+              dnevnog looka do glamurozne večernje inspiracije.
             </p>
             <div class="cta-row">
               <a class="primary-btn" href="#shop">Pregledaj kolekciju</a>
@@ -79,6 +86,23 @@
         </div>
       </section>
 
+      <section class="luxury-strip" id="new">
+        <div class="container category-grid">
+          <article class="category-card accent-one">
+            <span>Skin Ritual</span>
+            <h3>Glow & hydrate</h3>
+          </article>
+          <article class="category-card accent-two">
+            <span>Colour Play</span>
+            <h3>Velvet tones</h3>
+          </article>
+          <article class="category-card accent-three">
+            <span>Finishing Touch</span>
+            <h3>Soft luminosity</h3>
+          </article>
+        </div>
+      </section>
+
       <section class="shop" id="shop">
         <div class="container section-heading">
           <p class="eyebrow">Najprodavanije</p>
@@ -86,7 +110,7 @@
         </div>
 
         <div class="container product-grid">
-          <article class="product-item">
+          <article class="product-item" data-name="Skin Veil Foundation" data-price="49">
             <div class="product-image warm"></div>
             <div class="product-info">
               <span class="product-tag">Base</span>
@@ -94,12 +118,12 @@
               <div class="rating">★★★★★ <span>4.9</span></div>
               <div class="product-meta">
                 <strong>49,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Rose Petal Blush" data-price="34">
             <div class="product-image blush"></div>
             <div class="product-info">
               <span class="product-tag">Blush</span>
@@ -107,12 +131,12 @@
               <div class="rating">★★★★★ <span>4.8</span></div>
               <div class="product-meta">
                 <strong>34,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Velvet Lip Gloss" data-price="29">
             <div class="product-image gloss"></div>
             <div class="product-info">
               <span class="product-tag">Lips</span>
@@ -120,12 +144,12 @@
               <div class="rating">★★★★★ <span>5.0</span></div>
               <div class="product-meta">
                 <strong>29,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Moonlit Eyeshadow" data-price="42">
             <div class="product-image shadow"></div>
             <div class="product-info">
               <span class="product-tag">Eyes</span>
@@ -133,12 +157,12 @@
               <div class="rating">★★★★★ <span>4.7</span></div>
               <div class="product-meta">
                 <strong>42,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Petal Dew Serum" data-price="39">
             <div class="product-image serum"></div>
             <div class="product-info">
               <span class="product-tag">Glow</span>
@@ -146,12 +170,12 @@
               <div class="rating">★★★★★ <span>4.9</span></div>
               <div class="product-meta">
                 <strong>39,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Velvet Lash Lift" data-price="31">
             <div class="product-image mascara"></div>
             <div class="product-info">
               <span class="product-tag">Mascara</span>
@@ -159,12 +183,12 @@
               <div class="rating">★★★★★ <span>4.8</span></div>
               <div class="product-meta">
                 <strong>31,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Soft Focus Powder" data-price="36">
             <div class="product-image powder"></div>
             <div class="product-info">
               <span class="product-tag">Finish</span>
@@ -172,12 +196,12 @@
               <div class="rating">★★★★★ <span>4.9</span></div>
               <div class="product-meta">
                 <strong>36,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
 
-          <article class="product-item">
+          <article class="product-item" data-name="Bloom Aura Mist" data-price="44">
             <div class="product-image perfume"></div>
             <div class="product-info">
               <span class="product-tag">Fragrance</span>
@@ -185,11 +209,12 @@
               <div class="rating">★★★★★ <span>5.0</span></div>
               <div class="product-meta">
                 <strong>44,00 KM</strong>
-                <button>Dodaj</button>
+                <button class="add-to-cart" type="button">Dodaj</button>
               </div>
             </div>
           </article>
         </div>
+
       </section>
 
       <section class="features">
@@ -262,6 +287,23 @@
         </div>
       </section>
     </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-live="polite">
+      <div class="cart-header">
+        <h3>Košarica</h3>
+        <button class="close-cart" type="button" aria-label="Zatvori košaricu">×</button>
+      </div>
+      <ul id="cartItems" class="cart-items">
+        <li class="empty-cart">Vaša košarica je prazna.</li>
+      </ul>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Ukupno</span>
+          <strong id="cartTotal">0.00 KM</strong>
+        </div>
+        <button class="checkout-btn" type="button">Završi kupovinu</button>
+      </div>
+    </aside>
 
     <footer class="site-footer" id="contact">
       <div class="container footer-inner">
