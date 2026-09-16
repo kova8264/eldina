@@ -1,14 +1,14 @@
 :root {
-  --bg: #fffaf7;
-  --panel: #fff;
-  --panel-soft: #f9efe9;
-  --primary: #a85c55;
-  --primary-dark: #703a38;
-  --secondary: #f2d1c4;
-  --text: #2a1d1d;
-  --muted: #6e5b5e;
-  --border: rgba(66, 39, 39, 0.08);
-  --shadow: 0 20px 45px rgba(108, 63, 65, 0.12);
+  --bg: #f8f5ee;
+  --panel: #fffdf9;
+  --panel-soft: #edf2e5;
+  --primary: #536f4b;
+  --primary-dark: #2f4730;
+  --secondary: #d8d0b8;
+  --text: #2c2a26;
+  --muted: #5f5b52;
+  --border: rgba(47, 71, 48, 0.08);
+  --shadow: 0 20px 45px rgba(83, 111, 75, 0.12);
 }
 
 * {
@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #fffaf8 0%, #fff5ef 100%);
+  background: linear-gradient(180deg, #f9f5ef 0%, #f2efe7 100%);
   color: var(--text);
 }
 
@@ -77,7 +77,7 @@ input {
   width: 2.2rem;
   height: 2.2rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), #dca49a);
+  background: linear-gradient(135deg, var(--primary), #a9b89a);
   color: white;
   font-size: 1.2rem;
 }
@@ -113,9 +113,9 @@ input {
 .nav-button,
 .primary-btn,
 .newsletter button {
-  background: linear-gradient(135deg, var(--primary), #d18a7f);
+  background: linear-gradient(135deg, var(--primary), #8ea682);
   color: white;
-  box-shadow: 0 14px 24px rgba(168, 92, 85, 0.25);
+  box-shadow: 0 14px 24px rgba(83, 111, 75, 0.22);
 }
 
 .nav-button {
@@ -395,7 +395,7 @@ input {
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(168, 92, 85, 0.14), rgba(242, 209, 196, 0.45));
+  background: linear-gradient(135deg, rgba(83, 111, 75, 0.12), rgba(216, 208, 184, 0.5));
   color: var(--primary-dark);
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -476,7 +476,7 @@ input {
 }
 
 .site-footer {
-  background: #f7ece6;
+  background: #f0f1ea;
   border-top: 1px solid var(--border);
   padding-top: 2.5rem;
 }
